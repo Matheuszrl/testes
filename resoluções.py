@@ -36,9 +36,10 @@ dados = '''
     {"dia": 4, "valor": 2000.0}
 ]
 '''
-faturamento_d = json.loads(dados)
 
-valores = [dia["valor"] for dia in faturamento_d if dia["valor"] > 0]
+faturamento_diario = json.loads(dados)
+
+valores = [dia["valor"] for dia in faturamento_diario if dia["valor"] > 0]
 
 menor_valor = min(valores)
 maior_valor = max(valores)
